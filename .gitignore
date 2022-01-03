@@ -38,3 +38,4 @@ bodegacats-*.tar
 # variables.
 /config/*.secret.exs
 .env
+.DS_Store

@@ -22,7 +22,7 @@ defmodule BodegacatsWeb.Context do
          {:ok, current_user} <- Accounts.find_or_create(claims) do
       %{current_user: current_user}
     else
-      error -> error
+      _error -> %{}
     end
   end
 
