@@ -33,7 +33,7 @@ defmodule Bodegacats.MixProject do
   # Type `mix help deps` for examples and options.
   defp deps do
     [
-      {:absinthe, "~> 1.6"},
+      {:absinthe, "~> 1.7"},
       {:absinthe_plug, "~> 1.5"},
       {:phoenix, "~> 1.6.2"},
       {:phoenix_pubsub, "~> 2.0"},
@@ -46,6 +46,7 @@ defmodule Bodegacats.MixProject do
       {:mogrify, "~> 0.7.0"},
       {:ex_aws, "~> 2.1"},
       {:ex_aws_s3, "~> 2.0"},
+      {:sweet_xml, "~> 0.6"},
       {:cors_plug, "~> 2.0"},
       {:hackney, "~> 1.18"},
       {:bypass, "~> 1.0", only: :test},

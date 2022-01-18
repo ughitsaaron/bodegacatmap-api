@@ -5,11 +5,12 @@
 # is restricted to this project.
 
 # General application configuration
-use Mix.Config
+import Config
 
 config :bodegacats,
   ecto_repos: [Bodegacats.Repo],
-  admin_key: System.get_env("ADMIN_KEY")
+  admin_key: System.get_env("ADMIN_KEY"),
+  bucket_name: "personalprojects.aaronpetcoff"
 
 # Configures the endpoint
 config :bodegacats, BodegacatsWeb.Endpoint,

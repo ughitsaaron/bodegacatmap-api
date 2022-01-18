@@ -14,7 +14,7 @@ defmodule Bodegacats.Accounts.User do
   def changeset(user, attrs) do
     user
     |> cast(attrs, [:name, :email, :sub])
-    |> validate_required([:name, :email, :sub])
+    |> validate_required([:name, :sub])
     |> unique_constraint(:sub)
   end
 end

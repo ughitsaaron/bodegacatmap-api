@@ -1,4 +1,4 @@
-use Mix.Config
+import Config
 
 # For development, we disable any cache and enable
 # debugging and code reloading.
@@ -54,3 +54,5 @@ config :bodegacats, Bodegacats.Repo,
   password: "postgres",
   show_sensitive_data_on_connection_error: true,
   pool_size: 10
+
+import_config("dev.secret.exs")

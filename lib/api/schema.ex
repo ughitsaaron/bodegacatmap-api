@@ -7,4 +7,9 @@ defmodule Bodegacats.Schema do
   query do
     import_fields(:cat_queries)
   end
+
+  mutation do
+    import_fields(:image_mutations)
+    import_fields(:cat_mutations)
+  end
 end

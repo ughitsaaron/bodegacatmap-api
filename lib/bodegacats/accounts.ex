@@ -37,6 +37,7 @@ defmodule Bodegacats.Accounts do
   """
   def get_user!(id), do: Repo.get!(User, id)
 
+  @spec find_or_create(nil | maybe_improper_list | map) :: any
   def find_or_create(claims) do
     user = Repo.get_by(User, sub: claims["sub"])
 

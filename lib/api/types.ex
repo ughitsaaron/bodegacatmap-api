@@ -3,4 +3,5 @@ defmodule Bodegacats.Schema.Types do
 
   import_types(Bodegacats.Schema.Cat.Types)
   import_types(Bodegacats.Schema.User.Types)
+  import_types(Bodegacats.Schema.Image.Types)
 end
